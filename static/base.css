@@ -1,0 +1,55 @@
+/* Сброс стилей */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Основной контейнер страницы */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Заголовок страницы */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили объявления */
+  .ads {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .ad .topic_t {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ads .text_t {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .ad .name_author {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Стили ссылок */
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
