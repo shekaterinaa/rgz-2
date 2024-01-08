@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+</head>
+<body style="font-family: 'Arial', sans-serif; margin: 0; padding: 0;">
+
+    <main style="text-align: center; padding: 50px;">
+
+        <h1 style="color: #333;">ДОСКА ОБЪЯВЛЕНИЙ</h1>
+        <h2 style="color: #333;">Создать объявление</h2>
+
+        <form action="{{ url_for('create_ad') }}" enctype="multipart/form-data" method="POST" style="display: inline-block; text-align: left;">
+
+            <div style="margin-bottom: 20px;">
+                <label for="topic_t" style="display: block; margin-bottom: 10px;">Тема объявления</label>
+                <input type="text" id="topic_t" name="topic_t" required style="padding: 8px; width: 100%; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="text_t" style="display: block; margin-bottom: 10px;">Текст объявления</label>
+                <input type="text" id="text_t" name="text_t" required style="padding: 8px; width: 100%; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="name_author" style="display: block; margin-bottom: 10px;">Ваше Имя</label>
+                <input type="text" id="name_author" name="name_author" required style="padding: 8px; width: 100%; box-sizing: border-box;">
+            </div>
+        </form>
+
+    </main>
+
+</body>
+</html>
